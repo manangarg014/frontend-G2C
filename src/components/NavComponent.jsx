@@ -125,6 +125,7 @@ function NavComponent() {
               variant="success"
               onClick={loginShow}
               className="mb-2 mb-md-0 mr-md-2"
+              style={{ margin: "10px" }}
             >
               Login
             </Button>
@@ -132,6 +133,7 @@ function NavComponent() {
               variant="success"
               onClick={signupShow}
               className="mb-2 mb-md-0"
+              style={{ margin: "10px" }}
             >
               Signup
             </Button>
