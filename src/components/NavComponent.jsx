@@ -112,36 +112,33 @@ function NavComponent() {
   return (
     <>
       {/* navbar  section */}
-      <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home" className="text-success">
-            <img src="/images/logo.jpg" width="30%" alt="G2C Logo" />
-            G2C
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse
-            id="responsive-navbar-nav"
-            className="justify-content-end"
-          >
-            <div style={{ alignItems: "flex-start" }}>
-              <Button
-                variant="success"
-                onClick={loginShow}
-                style={{ marginLeft: "10px" }}
-              >
-                Login
-              </Button>
-              <Button
-                variant="success"
-                onClick={signupShow}
-                style={{ marginLeft: "10px" }}
-              >
-                Signup
-              </Button>
-            </div>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Navbar collapseOnSelect expand="md" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home" className="text-success">
+          <img src="/images/logo.jpg" width="30%" alt="G2C Logo" />
+          G2C
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <div className="d-flex flex-column flex-md-row align-items-center">
+            <Button
+              variant="success"
+              onClick={loginShow}
+              className="mb-2 mb-md-0 mr-md-2"
+            >
+              Login
+            </Button>
+            <Button
+              variant="success"
+              onClick={signupShow}
+              className="mb-2 mb-md-0"
+            >
+              Signup
+            </Button>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       {/* navbar section ends  */}
 
       {/* banner section  */}
