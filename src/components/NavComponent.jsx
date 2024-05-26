@@ -221,7 +221,6 @@ function NavComponent() {
                 </option>
                 <option value="grower">grower</option>
                 <option value="customer">customer</option>
-                <option value="admin">admin</option>
               </Form.Select>
             </Form.Group>
 
