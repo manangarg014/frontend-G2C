@@ -248,11 +248,6 @@ function Profile() {
                 />
               </Form.Group>
             </div>
-            <div className="col-md-6">
-              <Button variant="primary" onClick={growerProfileSearchAxios}>
-                Fetch Records
-              </Button>
-            </div>
           </div>
           {/* ------------------------------------Name and Contact Number------------------------- */}
           <div className="row">
