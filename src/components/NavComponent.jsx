@@ -127,14 +127,14 @@ function NavComponent() {
             <Button
               variant="success"
               onClick={loginShow}
-              style={{ marginLeft: "20px" }}
+              style={{ marginLeft: "10px" }}
             >
               login
             </Button>
             <Button
               variant="success"
               onClick={signupShow}
-              style={{ marginLeft: "20px" }}
+              style={{ marginLeft: "10px" }}
             >
               signup
             </Button>
