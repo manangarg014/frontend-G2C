@@ -115,31 +115,31 @@ function NavComponent() {
       <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home" className="text-success">
-            <img src="/images/logo.jpg" width="30%" alt="" />
+            <img src="/images/logo.jpg" width="30%" alt="G2C Logo" />
             G2C
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="justify-content-end"
-        >
-          <div style={{ alignItems: "flex-start" }}>
-            <Button
-              variant="success"
-              onClick={loginShow}
-              style={{ marginLeft: "10px" }}
-            >
-              login
-            </Button>
-            <Button
-              variant="success"
-              onClick={signupShow}
-              style={{ marginLeft: "10px" }}
-            >
-              signup
-            </Button>
-          </div>
-            </Navbar.Collapse>
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <div style={{ alignItems: "flex-start" }}>
+              <Button
+                variant="success"
+                onClick={loginShow}
+                style={{ marginLeft: "10px" }}
+              >
+                Login
+              </Button>
+              <Button
+                variant="success"
+                onClick={signupShow}
+                style={{ marginLeft: "10px" }}
+              >
+                Signup
+              </Button>
+            </div>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
       {/* navbar section ends  */}
