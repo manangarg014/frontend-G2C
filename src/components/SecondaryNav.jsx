@@ -14,15 +14,15 @@ function SecondaryNav() {
             <img src="/images/logo.jpg" width="30%" alt="" />
             G2C
           </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
-        >
+        > */}
           <Button onClick={() => navigate(-1)} variant="outline-success">
             Back
           </Button>
-        </Navbar.Collapse>
+        {/* </Navbar.Collapse> */}
       </Navbar>
     </Container>
   );

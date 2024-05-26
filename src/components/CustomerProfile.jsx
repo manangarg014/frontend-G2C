@@ -142,9 +142,9 @@ function Profile() {
         window.location.href = "/";
       } else if (error.response) {
     // Handle other error status codes (e.g., 400, 500)
-    alert("Error: " + error.response.data.message); // Example: Display specific error message from the backend
+    console.log("Error: " + error.response.data.message); // Example: Display specific error message from the backend
   } else {
-    alert("Network error or other issue occurred.");
+    console.log("Network error or other issue occurred.");
   }
     }
   }

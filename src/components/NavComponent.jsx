@@ -118,6 +118,11 @@ function NavComponent() {
             <img src="/images/logo.jpg" width="30%" alt="" />
             G2C
           </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end"
+        >
           <div style={{ alignItems: "flex-start" }}>
             <Button
               variant="success"
@@ -134,6 +139,7 @@ function NavComponent() {
               signup
             </Button>
           </div>
+            </Navbar.Collapse>
         </Container>
       </Navbar>
       {/* navbar section ends  */}
