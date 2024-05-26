@@ -40,6 +40,11 @@ function NavComponent() {
     alert(JSON.stringify(obj));
   }
 
+  const handleLoginClick = () => {
+    signupClose(); // Close the signup modal when Login button is clicked
+    loginShow(); // Open the login modal
+  };
+
   //-------------------------signup
   const [obj2, setobj2] = useState({
     email: "",
@@ -113,34 +118,37 @@ function NavComponent() {
     <>
       {/* navbar  section */}
       <Navbar collapseOnSelect expand="md" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home" className="text-success">
-          <img src="/images/logo.jpg" width="30%" alt="G2C Logo" />
-          G2C
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-          <div className="d-flex flex-column flex-md-row align-items-center">
-            <Button
-              variant="success"
-              onClick={loginShow}
-              className="mb-2 mb-md-0 mr-md-2"
-              style={{ margin: "10px" }}
-            >
-              Login
-            </Button>
-            <Button
-              variant="success"
-              onClick={signupShow}
-              className="mb-2 mb-md-0"
-              style={{ margin: "10px" }}
-            >
-              Signup
-            </Button>
-          </div>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        <Container>
+          <Navbar.Brand href="#home" className="text-success">
+            <img src="/images/logo.jpg" width="30%" alt="G2C Logo" />
+            G2C
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <div className="d-flex flex-column flex-md-row align-items-center">
+              <Button
+                variant="success"
+                onClick={loginShow}
+                className="mb-2 mb-md-0 mr-md-2"
+                style={{ margin: "10px" }}
+              >
+                Login
+              </Button>
+              <Button
+                variant="success"
+                onClick={signupShow}
+                className="mb-2 mb-md-0"
+                style={{ margin: "10px" }}
+              >
+                Signup
+              </Button>
+            </div>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       {/* navbar section ends  */}
 
       {/* banner section  */}
@@ -230,8 +238,19 @@ function NavComponent() {
             </Form.Group>
 
             <Button variant="primary" onClick={doSignupAxios}>
-              signup
+              Signup
             </Button>
+            <div style={{ marginTop: "10px" }}>
+              <span>Already have an account? </span>
+              <Button
+                variant="link"
+                onClick={handleLoginClick}
+                className="p-0"
+                style={{ textDecoration: "underline", color: "blue" }}
+              >
+                Login
+              </Button>
+            </div>
           </Form>
         </Modal.Body>
       </Modal>
